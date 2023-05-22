@@ -1,7 +1,3 @@
-body {
-  font-family: Arial, sans-serif;
-}
-
 .wd-container {
   padding-top: 30px;
   width: 640px;
@@ -12,10 +8,6 @@ body {
   height: 900px;
 }
 
-.wd-padding-container {
-  padding-left: 10px;
-  padding-right: 10px;
-}
 
 .wd-search-container {
   position: relative;
@@ -106,22 +98,6 @@ body {
   margin-top: 0px;
   height: 100%;
 }
-
-.wd-grid-row {
-  clear: both;
-}
-
-.wd-grid-col-main-content {
-  width: 90%;
-  float: left;
-  margin-bottom: 20px;
-}
-
-.wd-grid-col-right-sidebar {
-  width: 10%;
-  float: right;
-}
-
 /* .wd-nav-underline {
     border: 1px solid #efefef;
 } */

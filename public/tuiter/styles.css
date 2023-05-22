@@ -1,43 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
 .wd-text-15 {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .wd-text-10 {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .wd-text-13 {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .wd-text-20 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .wd-bg-pink {
-    background-color: palevioletred;
+  background-color: palevioletred;
 }
 
 .wd-p-10 {
-    padding: 5px;
+  padding: 5px;
 }
 
 .wd-border-radius-6 {
-    border-radius: 6px;
+  border-radius: 6px;
 }
 
 .wd-font-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .wd-mt-13 {
-    margin-top: 13px;
+  margin-top: 13px;
 }
 
 .wd-mt-4 {
-    margin-top: 4px;
+  margin-top: 4px;
 }
 
 .wd-font-grey {
-    color: #666;
+  color: #666;
+}
+
+.wd-mb-20 {
+  margin-bottom: 20px;
+}
+
+.wd-grid-row {
+  clear: both;
+}
+
+.wd-grid-col-main-content {
+  width: 80%;
+  float: left;
+}
+
+.wd-grid-col-main-content-90 {
+  width: 90%;
+  float: left;
+}
+
+.wd-grid-col-right-sidebar {
+  width: 10%;
+  float: right;
+}
+
+.wd-grid-col-left-sidebar {
+  width: 10%;
+  float: left;
+}
+
+.wd-padding-container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.wd-img-round {
+  border-radius: 50%;
+}
+
+.wd-mr-10 {
+  margin-right: 8px;
+}
+
+.wd-mr-3 {
+  margin-right: 3px;
+}
+
+.wd-float-right {
+  float: right;
+}
+
+.wd-mt-5 {
+  margin-top: 5px;
+}
+
+.wd-mt-15 {
+  margin-top: 15px;
+}
+
+.wd-img-small {
+  width: 30px;
+  height: 30px;
+}
+
+.wd-row-divider {
+    border: 1px solid #efefef;
+}
+
+.wd-pb-15 {
+    padding-bottom: 15px;
 }

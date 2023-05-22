@@ -1,0 +1,36 @@
+.wd-container {
+  padding-top: 10px;
+  width: 640px;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 1150px;
+}
+
+.wd-verified-icon {
+  color: #00acee;
+}
+
+.wd-card-img {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.wd-card-container {
+  border: 1px solid #efefef;
+  border-radius: 15px;
+}
+
+.wd-card-padding {
+    padding: 0px 15px 0px 15px;
+}
+
+.wd-mr-20 {
+    margin-right: 70px;
+}
+
+.wd-font-heart {
+    color: #ff2052;
+}

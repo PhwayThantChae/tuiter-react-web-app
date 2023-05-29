@@ -1,4 +1,5 @@
 import VariablesAndConstants from "./variables-and-constants";
+import VariableTypes from "./variable-types";
 
 function JavaScript() {
     console.log('Hello World');
@@ -6,6 +7,7 @@ function JavaScript() {
         <div>
             <h1>JavaScript</h1>
             <VariablesAndConstants/>
+            <VariableTypes/>
         </div>
     );
 }

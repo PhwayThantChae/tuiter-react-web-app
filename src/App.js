@@ -13,6 +13,7 @@ function App() {
           <Route path="/" element={<Navigate to="/labs/" />} />
           <Route path="/labs/*" element={<Labs/>}/>
           <Route path="/hello" element={<HelloWorld/>} />
+          <Route path="/tuiter" element={<Navigate to="/tuiter/home" />} />
           <Route path="/tuiter/*" element={<Tuiter/>} />
         </Routes>
       </div>

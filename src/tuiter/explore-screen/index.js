@@ -10,7 +10,7 @@ function ExploreScreen() {
        <div className="col-md-11 col-sm-8 col-10 position-relative">
          <input placeholder="Search Tuiter"
                 className="form-control rounded-pill ps-5"/>
-         <AiOutlineSearch className="fs-3 position-absolute 
+         <AiOutlineSearch className="fs-3 position-absolute   
                        wd-nudge-up"/>
        </div>
        <div className="col-md-1 col-sm-4 col-2">

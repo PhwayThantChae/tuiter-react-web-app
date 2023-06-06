@@ -15,6 +15,7 @@ const templateTuit = {
   replies: 0,
   retuits: 0,
   likes: 0,
+  title: "New tuit"
 };
 
 const tuitsSlice = createSlice({

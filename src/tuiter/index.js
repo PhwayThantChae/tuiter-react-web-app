@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router";
 import Nav from "../nav";
 import NavigationSidebar from "./navigation-sidebar";
-import HomeScreen from "./home-screen";
 import ExploreScreen from "./explore-screen/index";
 import BookmarksScreen from "./bookmarks-screen";
+import HomeScreen from "./home-screen";
 import ProfileScreen from "./profile-screen";
 import WhoToFollowList from "./who-to-follow-list";
 import whoReducer from "./reducers/who-reducer";

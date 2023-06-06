@@ -15,7 +15,7 @@ const TuitItem = ({
   return (
     <li className="list-group-item">
       <div className="row">
-        <div className="col-2">
+        <div className="col-2 text-center">
           <img
             width={70}
             className="text-center mt-2 rounded-3 img-fluid"

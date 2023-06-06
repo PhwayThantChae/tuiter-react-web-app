@@ -1,4 +1,10 @@
+import TuitList from "./tuits";
+
 function HomeScreen() {
-  return <h1>Home</h1>;
+  return (
+    <div>
+      <TuitList/>
+    </div>
+  )
 }
 export default HomeScreen;

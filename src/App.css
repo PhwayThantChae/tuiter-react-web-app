@@ -164,3 +164,7 @@
 .wd-img-object-fit {
   object-fit: cover;
 }
+
+.wd-font-heart {
+  color: #ff2052;
+}

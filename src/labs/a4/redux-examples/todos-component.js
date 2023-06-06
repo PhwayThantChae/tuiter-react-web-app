@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addTodo } from "./reducers/todos-reducer";
+import { addTodo, deleteTodo, todoDoneToggle } from "./reducers/todos-reducer";
 
 const Todos = () => {
   const todos = useSelector((state) => state.todos);
@@ -10,6 +10,13 @@ const Todos = () => {
     dispatch(addTodo(todo));
     setTodo({ do: "" });
   };
+  const deleteTodoClickHandler = (index) => {
+    dispatch(deleteTodo(index));
+  };
+  const toggleTodoDone = (todo) => {
+    dispatch(todoDoneToggle(todo))
+  }
+ 
   const todoChangeHandler = (event) => {
     const doValue = event.target.value;
     const newTodo = {
@@ -22,11 +29,11 @@ const Todos = () => {
       <h3>Todos</h3>
       <li className="list-group-item">
         <button
-            onClick={createTodoClickHandler}
-            className="btn btn-primary w-25 
+          onClick={createTodoClickHandler}
+          className="btn btn-primary w-25 
                             float-end"
         >
-            Create
+          Create
         </button>
         <input
           onChange={todoChangeHandler}
@@ -35,11 +42,24 @@ const Todos = () => {
         />
       </li>
       <ul className="list-group">
-        {todos.map((todo) => (
-          <li className="list-group-item">{todo.do}</li>
+        {todos.map((todo, index) => (
+          <li className="list-group-item">
+            <button
+              onClick={() => deleteTodoClickHandler(index)}
+              className="btn btn-danger float-end ms-2"
+            >
+              Delete
+            </button>
+            <input type="checkbox" className="me-2"
+            checked={todo.done}
+            onChange={() => 
+             toggleTodoDone(todo)}/>
+
+            {todo.do}
+          </li>
         ))}
       </ul>
-      <br/>
+      <br />
     </>
   );
 };

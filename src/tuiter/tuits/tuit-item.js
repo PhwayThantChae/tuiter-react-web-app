@@ -1,6 +1,5 @@
 import React from "react";
-import { faCircleCheck, faRetweet, faHeart as faSolidHeart, faArrowUpFromBracket } from "@fortawesome/free-solid-svg-icons";
-import { faComment, faHeart } from "@fortawesome/free-regular-svg-icons";
+import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TuitStats from "./tuit-stats";
 const TuitItem = ({

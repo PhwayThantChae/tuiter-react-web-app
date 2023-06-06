@@ -6,6 +6,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faComment, faHeart } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useDispatch, useSelector } from "react-redux";
+import { likeToggle } from "../reducers/tuits-reducer";
+
 const TuitStats = ({
     tuit = {
       topic: "Space",
@@ -16,6 +19,10 @@ const TuitStats = ({
       image: "bootstrap.png",
     },
   }) => {
+    const dispatch = useDispatch();
+    const toggleTuitLike = (tuit) => {
+        dispatch(likeToggle(tuit))
+      }
   return (
     <div class="d-flex justify-content-between mt-2">
       <div class="small">
@@ -27,10 +34,12 @@ const TuitStats = ({
         {tuit.retuits}
       </div>
       <div class="small">
+        <a href="#" class="text-decoration-none" onClick={() => toggleTuitLike(tuit)}>
         <FontAwesomeIcon
           icon={tuit.liked ? faSolidHeart : faHeart}
           className={tuit.liked ? "wd-font-heart me-1" : "me-1"}
         />
+        </a>
         {tuit.likes}
       </div>
       <div class="small">

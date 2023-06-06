@@ -1,7 +1,10 @@
 import React from "react";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCircleCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TuitStats from "./tuit-stats";
+import { useDispatch } from "react-redux";
+import { deleteTuit } from "../reducers/tuits-reducer";
+
 const TuitItem = ({
   tuit = {
     topic: "Space",
@@ -12,6 +15,11 @@ const TuitItem = ({
     image: "bootstrap.png",
   },
 }) => {
+  const dispatch = useDispatch();
+  const deleteTuitHandler = (id) => {
+    dispatch(deleteTuit(id));
+  };
+
   return (
     <li className="list-group-item">
       <div className="row">
@@ -24,10 +32,24 @@ const TuitItem = ({
         </div>
         <div className="col-10">
           <div>
-            <span class="fw-bolder small">{tuit.userName}</span> 
-            <i class="fa-solid fa-circle-check "></i> 
-            <FontAwesomeIcon icon={faCircleCheck} className="wd-verified-icon ms-1 me-1 text-primary" />
-            <span class="small">{tuit.handle} . {tuit.time}</span>
+            <a href="#"
+              className="float-end text-secondary"
+              onClick={() => deleteTuitHandler(tuit._id)}
+            >
+              <FontAwesomeIcon
+                icon={faXmark}
+                className=""
+              />
+            </a>
+            <span class="fw-bolder small">{tuit.userName}</span>
+            <i class="fa-solid fa-circle-check "></i>
+            <FontAwesomeIcon
+              icon={faCircleCheck}
+              className="wd-verified-icon ms-1 me-1 text-primary"
+            />
+            <span class="small">
+              {tuit.handle} . {tuit.time}
+            </span>
           </div>
           <div class="small">{tuit.tuit}</div>
 

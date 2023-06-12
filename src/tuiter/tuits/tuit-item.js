@@ -41,7 +41,7 @@ const TuitItem = ({
                 className=""
               />
             </a>
-            <span class="fw-bolder small">{tuit.userName}</span>
+            <span class="fw-bolder small">{tuit.username}</span>
             <i class="fa-solid fa-circle-check "></i>
             <FontAwesomeIcon
               icon={faCircleCheck}
